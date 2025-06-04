@@ -1,23 +1,52 @@
-<html lang = "ja">
+<html lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <tytle>
-            宮内月歌
-        </tytle>
-        <button>
-            Contents
-        </button>
+        <title>宮内月歌</title>
+        <style>
+            /* 名前を大きくする */
+            .name {
+                font-size: 2em;
+                font-weight: bold;
+                display: inline-block;
+            }
+
+            /* 自己紹介を小さくして名前の隣に配置 */
+            .intro {
+                font-size: 0.8em;
+                display: inline-block;
+                margin-left: 10px;
+                vertical-align: top;
+            }
+
+            /* 略歴を見やすくする */
+            .timeline {
+                margin-top: 20px;
+                padding-left: 20px;
+                list-style-type: none;
+            }
+
+            .timeline li {
+                margin-bottom: 10px;
+            }
+        </style>
     </head>
     <body>
-        <h1>略歴</h1>
-        2004       生誕
-        2010/04    小学校入学
-        2016/04    中学校入学
-        2022/04    大学入学
-        now!
-    </body>
-    <div>
-        html初めてです。がんばります。
-    </div>
+        <!-- 名前と自己紹介 -->
+        <div>
+            <span class="name">宮内月歌</span>
+            <span class="intro">html初めてです。がんばります。</span>
+        </div>
 
+        <!-- 略歴 -->
+        <h1>略歴</h1>
+        <ul class="timeline">
+            <li><strong>2004:</strong> 生誕</li>
+            <li><strong>2010/04:</strong> 小学校入学</li>
+            <li><strong>2016/04:</strong> 中学校入学</li>
+            <li><strong>2022/04:</strong> 大学入学</li>
+            <li><strong>now:</strong> 現在</li>
+        </ul>
+        <h1>作品</h1>
+        <img src = ./illust.html>
+    </body>
 </html>
